@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Add New Token</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <style>
+    input[type=date], select {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=time], select {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+    .button {
+      display: inline-block;
+      padding: 5px 20px;
+      font-size: 15px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #3491c7;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+    
+    .button:hover {background-color: #3181c2}
+    
+    .button:active {
+      background-color: #3398c7;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    </style>
+
+</head>
+<body style="background-color: #e9ecef;">
+
+  <!-- end preheader -->
+
+  <!-- start body -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <button value="submit" class="button" onclick="location.href='userdashboard.html';"><b>Back</b></button>               
+            
+    <!-- start logo -->
+    <tr>
+      <td align="center" bgcolor="#e9ecef">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+          <tr>
+            <td align="center" valign="top" style="padding: 36px 24px;">   
+                <img src="logo.png" alt="Trulli" width="200" height="200">  
+                <p style="color:rgb(43, 169, 179); font-size:40px;"><b><u>Add Token</u></b></p>       
+             </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <!-- end logo -->
+
+    <!-- start hero -->
+    <tr>
+      <td align="center" bgcolor="#e9ecef">
+
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+          <tr>
+            <td align="center" bgcolor="#ffffff" style="padding: 36px 24px 0; border-top: 3px solid #d4dadf;">
+                <form action="">
+                    <label for="date"><b>Date: </b></label>
+                    <input type="date" id="date" name="date"><br><br>
+                    <label for="time"><b>Filling Time: </b></label>
+                    <input type="time" id="time" name="time"><br><br>
+                    <label for="method"><b>Preffered Method to Contact: </b></label>
+                    <input type="radio" id="email" name="method" value="Email">
+                    <label for="email"><b>Email</b></label>
+                    <input type="radio" id="sms" name="method" value="SMS"> <label for="sms"><b>SMS</b></label><br><br>
+                    <button value="submit" class="button"><b>Create and Pay</b></button>
+                  </form>
+            </td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+    <!-- end hero -->
+
+    <!-- start copy block -->
+    <tr>
+      <td align="center" bgcolor="#e9ecef">
+
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+
+          <!-- start copy -->
+          <tr>
+            <td align="center" bgcolor="#ffffff" style="padding: 24px; font-size: 16px; line-height: 24px;">
+              </td>
+          </tr>
+          <!-- end copy -->
+
+        </table>
+
+      </td>
+    </tr>
+    <!-- end copy block -->
+
+    <!-- end footer -->
+
+  </table>
+  <!-- end body -->
+
+</body>
+</html>
