@@ -20,6 +20,7 @@ return new class extends Migration
             $table->dateTime('scheduled_time');
             $table->enum('status',['PENDING','COMPLETED','INCOMPLETE']);
             $table->boolean('paid');
+            $table->float('amount',8,2);
             $table->unsignedBigInteger('vehicle_id');
             $table->unsignedBigInteger('fuel_station_id');
             $table->foreign('vehicle_id')->references('id')->on('vehicles');

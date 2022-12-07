@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\User;
 use App\Models\Customer;
 use Brick\Math\BigInteger;
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -19,10 +20,10 @@ class VehicleFactory extends Factory
     public function definition()
     {
         return [
+            'name'=>fake()->name(),
             'reg_no'=>fake()->lexify('car-????'),
             'quota'=>fake()->numberBetween(0,20),
-            'customer_id'=> Customer::factory()
-
+            'user_id'=> User::factory()
         ];
     }
 }
